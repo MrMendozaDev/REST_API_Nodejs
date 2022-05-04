@@ -1,0 +1,16 @@
+.navar_login{
+    border-bottom: 2px solid #eee; 
+    margin-bottom: 10px; 
+    background: white;
+}
+
+.title_login{
+    text-align: center !important; 
+    color: #563D64 !important;
+}
+
+.center{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
