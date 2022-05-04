@@ -28,7 +28,7 @@ const create_user = (dataUser) => {
     const { names, ap_paterno, ap_materno, address, email, password} = dataUser
     return new Promise((resolve, reject) => {
         sql_insert = `INSERT INTO users (names, fatherly_surname, maternal_surname, address, email, password)
-                      VALUES ('${names}', '${ap_paterno}', '${ap_materno}', '${address}', '${email}', '${password})`
+                      VALUES ('${names}', '${ap_paterno}', '${ap_materno}', '${address}', '${email}', '${password}')`
         
         pool.query(sql_insert, (err, result, fields) => {
             if(err) return reject(err.message)
